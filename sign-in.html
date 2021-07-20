@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Sweet Alert JavaScript -->
+    <script src="/scripts/sweetalert2.js"></script>
+    <!--  Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <title>Log in</title>
+
+    <style>
+        body,
+        html {
+            overflow: hidden;
+        }
+
+        .container-fluid {
+            padding-left: 0px;
+            position: relative;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+    <div class="container-fluid">
+
+        <img class="bg-image" src="/images/1x/artboard-5.jpg" alt="">
+        <div class="auth-form row mx-1">
+            <div class="col-lg-10 col-md-10 offset-lg-1 offset-md-1 bg-transparent mb-5">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 p-4 divCover">
+                    </div>
+                    <div class="col-lg-6 col-md-6 p-lg-5 p-md-5 px-4 py-4 text-white">
+                        <div id="signInForm">
+                            <img class="gourmet-nbi mb-5" src="images\1x\gourmet.png" alt="logo" />
+                            <div class="form-group text-white">
+                                <label for="userSIEmail">Email adress<span class="text-danger ml-1">*</span></label>
+                                <input type="email" class="form-control" id="userSIEmail" onblur="checkUserSIEmail()"
+                                    placeholder="mail@mail.com">
+                                <small id="userSIEmailError" class="form-text text-danger">Please check your login
+                                    information.</small>
+                            </div>
+                            <div class="form-group text-white">
+                                <label for="userSIPassword">Password<span class="text-danger ml-1">*</span></label>
+                                <input type="password" class="form-control" id="userSIPassword"
+                                    onblur="checkUserSIPassword()" placeholder="password">
+                                <small id="userSIPasswordError" class="form-text text-danger">Please check your
+                                    password.</small>
+                            </div>
+                            <button type="button"
+                                class="btn btn-outline-primary font-weight-bold text-uppercase mb-3 float-right"
+                                onclick="signIn()">Sign In</button>
+
+                            <p class="float-right">Not a member yet? Become a member: <a href="sign-up.html"><strong
+                                        class="text-primary text-uppercase showSignUpForm ">Sign
+                                        Up</strong></a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+    <!-- Firebase -->
+    <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-database.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCoO8uJKJliCmfO4lutZeJrKG5t2E3zVG8",
+            authDomain: "mneti-services.firebaseapp.com",
+            databaseURL: "https://mneti-services.firebaseio.com",
+            projectId: "mneti-services",
+            storageBucket: "mneti-services.appspot.com",
+            messagingSenderId: "1019234561108",
+            appId: "1:1019234561108:web:c86f4220d7de5ad8d1d1c1"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <!-- Custom JavaScript -->
+    <script src="/scripts/app.js"></script>
+
+</body>
+
+</html>

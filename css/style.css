@@ -1,0 +1,664 @@
+body {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.bg-image {
+  width: 100%;
+  position: absolute;
+}
+
+.container-fluid {
+  padding-left: 0px;
+  position: relative;
+}
+
+.auth-form {
+  padding-top: 6rem;
+}
+
+/* form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+} */
+
+img.background-img {
+  position: fixed;
+  width: 100%;
+}
+
+.gourmet-nbi {
+  width: 100%;
+}
+
+.not-member {
+  display: flow-root;
+}
+
+.btn-signup {
+  display: block;
+}
+
+#signup-form {
+  position: absolute;
+  left: 70%;
+}
+
+#signup-form input {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 15px;
+  border-width: 1px;
+  border-radius: 30px;
+  border-color: #ffffff;
+  background-color: transparent;
+  color: grey;
+  border-style: solid;
+}
+
+.signup-btn {
+  border-color: white;
+  border-width: 1px;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 30px;
+  background: transparent;
+  padding: 15px 25px 15px 25px;
+  text-decoration: none;
+}
+
+.signup-btn:hover {
+  color: grey;
+  text-decoration: none;
+}
+
+.divCover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divCover img {
+  width: 70%;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+#userPhoneNumberError,
+#userFullNameError,
+#userQualificationError,
+#userLocationError,
+#userEmailError,
+#userPasswordError,
+#userSIEmailError,
+#userSIPasswordError,
+#userBioError,
+#editProfileForm {
+  display: none;
+}
+
+#userAvatar {
+  width: 120px;
+  height: 120px;
+}
+
+h1 {
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+h5 {
+  line-height: 2rem;
+  margin-bottom: 2.2rem;
+}
+
+a {
+  color: #fff;
+}
+
+i:hover {
+  color: #ff4c68;
+}
+
+.btn-book {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 20px 35px 20px 35px;
+  background-color: #111111;
+  border: solid #ffffff 1px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-book:hover {
+  background: #333333;
+  border: solid #eeeeee 1px;
+}
+
+/* section-selectors */
+
+#title {
+  color: #fff;
+  height: 37rem;
+}
+
+#features {
+  position: relative;
+  z-index: 1;
+  padding: 6rem;
+}
+
+#menu {
+  height: auto;
+}
+
+#press {
+  padding-bottom: 3%;
+}
+
+#pricing {
+  padding: 100px;
+}
+
+#cta {
+  font-weight: 900;
+}
+
+#footer {
+  padding-bottom: 10px;
+  height: 15rem;
+}
+
+/* theme */
+
+/* .colored-section {
+  background-color: #111111;
+  color: #fff;
+} */
+
+/* .white-section {
+  background-color: #fff;
+  color: black;
+} */
+
+/* .colored-section#testimonials {
+  background-color: #111111;
+  height: 40rem;
+} */
+
+/* title-section */
+
+/* #title.colored-section {
+  height: 45rem;
+} */
+
+/* section areas */
+
+.description-section {
+  background-color: white;
+  color: #111111;
+}
+
+.welcome-section {
+  background-color: #111111;
+  color: white;
+}
+
+.menu-highlights-section {
+  background-color: #111111;
+  margin-top: 10rem;
+  color: white;
+}
+
+.desc-div {
+  text-align: left;
+  left: 8rem;
+  position: relative;
+  z-index: 0;
+}
+
+.book-div {
+  text-align: left;
+  left: 2rem;
+}
+
+/* nav bar */
+
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  padding: 2%;
+  margin-left: 5.5rem;
+}
+
+.nav-link {
+  font-weight: 200;
+  margin: 0 2.5rem;
+}
+
+/* i-phone */
+
+.img-div {
+  padding: 0;
+}
+
+.ip {
+  position: relative;
+  width: 100%;
+  margin-top: 0;
+}
+
+/* feature-section */
+
+.descf-div {
+  height: 38rem;
+  padding: 9.5rem 2rem 2rem 3rem;
+  font-weight: 900;
+}
+
+.desc-img {
+  width: 50%;
+}
+
+.family-friendly {
+  font-weight: 300;
+  margin-left: 2rem;
+  text-align: left;
+  width: 50%;
+}
+
+.family-friendly {
+  margin-left: 2rem;
+  width: 60%;
+  text-align: left;
+}
+
+h1.local-food {
+  font-weight: 300;
+  margin-left: 10rem;
+  text-align: left;
+}
+
+h5.local-food {
+  width: 60%;
+  text-align: left;
+  margin-left: 10.5rem;
+}
+
+/* #features.white-section {
+  padding: 0;
+  height: 69rem;
+} */
+
+.country-home-img {
+  position: absolute;
+  box-shadow: 0 36px 50px 0 rgba(0, 0, 0, 0.5), 0 6px 70px 0 rgba(0, 0, 0, 0.19);
+  top: -4rem;
+  width: 85%;
+}
+
+.desc-text {
+  padding-top: 5rem;
+}
+
+.country-home-sec-img {
+  position: absolute;
+  box-shadow: 0 36px 50px 0 rgba(0, 0, 0, 0.5), 0 6px 70px 0 rgba(0, 0, 0, 0.19);
+  width: 85%;
+}
+
+.second-row {
+  margin-top: 19rem;
+}
+
+img.market-place {
+  position: absolute;
+  box-shadow: 0 36px 50px 0 rgba(0, 0, 0, 0.5), 0 6px 70px 0 rgba(0, 0, 0, 0.19);
+  right: 13rem;
+  bottom: 4.5rem;
+  width: 60%;
+}
+
+/* highlights-section */
+.menu-highlights-div {
+  padding: 8rem 0 0 6rem;
+  height: auto;
+  width: 50%;
+  text-align: left;
+}
+
+.menu-highlight-left {
+  padding: 8rem 0 0 6rem;
+  height: auto;
+  text-align: left;
+}
+
+.menu-highlight-right {
+  height: auto;
+  text-align: left;
+  padding-left: 1.3rem;
+  padding-top: 9rem;
+}
+
+/* .menu-highlight-h1 {
+  font-weight: 300;
+}
+
+.menu-highlight-h5 {
+  width: 80%;
+} */
+
+.menu-desc-div {
+  padding: 8rem 0 0 8rem;
+  height: 35rem;
+  width: 50%;
+  text-align: left;
+}
+
+.list-group {
+  height: 100%;
+  width: 100%;
+}
+
+.list-group-item {
+  background-color: #111111;
+  width: 30%;
+  height: 90%;
+}
+
+.starter {
+  height: 6rem;
+}
+
+.main {
+  height: 6rem;
+}
+
+.dessert {
+  height: 6rem;
+}
+
+/* carousel */
+
+.carousel-item {
+  padding: 6rem;
+}
+
+.dinner-party {
+  position: relative;
+  left: 0rem;
+  width: 100%;
+}
+
+.reservation-section {
+  background-image: url(../imagess/fancyfruitsf.jpg);
+  background-size: cover;
+  color: white;
+  overflow: scroll;
+  padding: 75px 0 40px 90px;
+  height: 15rem;
+  width: 100%;
+}
+
+.footer-section {
+  margin-bottom: -1rem;
+  background-color: #111111;
+  color: white;
+  height: 15rem;
+}
+
+.cta-text {
+  margin: 0;
+  font-weight: 900;
+}
+
+.btn-cta {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 20px;
+  background-color: transparent;
+  border: solid #ffffff 1px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn-cta:hover {
+  background: #333333;
+  border: solid #eeeeee 1px;
+}
+
+/* footer */
+
+a.footer-logo {
+  font-family: "Playfair Display", serif;
+  position: absolute;
+  left: 2rem;
+  margin: 5rem 0 0 6rem;
+  font-size: 200%;
+}
+
+.address {
+  position: relative;
+  top: 4rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  font-size: larger;
+}
+
+.open-times {
+  top: 4rem;
+  position: relative;
+  text-align: left;
+  font-size: larger;
+}
+
+.img-h {
+  object-fit: cover;
+  width: 80%;
+  height: 35%;
+  margin-top: 1.2rem;
+}
+
+.img-h3 {
+  object-fit: cover;
+  width: 90%;
+  height: 35%;
+  margin-top: 1.2rem;
+}
+
+.no-gutters {
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+  height: 18%;
+  font-size: small;
+}
+
+.mobile-second-row {
+  display: none;
+}
+
+.row-height {
+  height: 570px;
+}
+
+.book-text {
+  padding-left: 5rem;
+}
+
+.booktable-section {
+  background-color: white;
+  color: #111111;
+}
+
+.book-row {
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+}
+
+.booking-links {
+  cursor: pointer;
+}
+
+.booking-links:hover {
+  font-weight: 700 !important;
+}
+
+/* mobile media-query */
+@media only screen and (max-width: 768px) {
+  .book-text {
+    padding-left: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .book-row {
+    margin-top: 2rem;
+    margin-bottom: 0rem;
+  }
+
+  .menu-highlights-section {
+    margin-top: 1rem;
+  }
+
+  .menu-highlight-left {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .menu-highlight-left h1 {
+    font-size: x-large;
+  }
+
+  .menu-highlight-left h5 {
+    font-size: medium;
+  }
+
+  .menu-highlight-right {
+    text-align: left;
+    padding-left: 1.3rem;
+    padding-top: 0rem;
+    padding-bottom: 9rem;
+  }
+
+  .img-h {
+    width: 100%;
+    height: 100%;
+    margin-top: 1.2rem;
+  }
+
+  .no-gutters {
+    text-align: center;
+    height: 39%;
+  }
+
+  .no-gutters .col-md-4 {
+    height: 150px;
+  }
+
+  .navbar-brand {
+    margin-left: 0rem;
+    font-size: 2.5rem;
+  }
+
+  .desc-div {
+    left: 0rem;
+    padding: 2.3rem;
+    padding-bottom: 10rem;
+  }
+
+  .ip {
+    display: none;
+  }
+
+  .country-home-img {
+    width: 92%;
+  }
+
+  .family-friendly {
+    width: 100%;
+    text-align: center;
+    margin-left: 0rem;
+  }
+
+  h1.family-friendly {
+    font-size: 2rem;
+  }
+
+  h5.family-friendly {
+    font-size: 1rem;
+  }
+
+  .side-text {
+    margin-top: 30rem;
+    margin-bottom: 4rem;
+  }
+
+  .mobile-second-row {
+    display: block;
+  }
+
+  .second-row {
+    display: none;
+  }
+
+  .desc-text {
+    padding-top: 0rem;
+  }
+
+  .row-height {
+    height: auto;
+  }
+
+  .gutter-height {
+    height: 70px;
+  }
+
+  .reservation-section {
+    padding: 2rem;
+    height: 16rem;
+  }
+
+  .cta-text {
+    text-align: center;
+    font-size: 1.8rem;
+  }
+
+  .btn-cta {
+    margin: auto;
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .footer-section {
+    height: 19rem;
+  }
+
+  .open-times {
+    text-align: center;
+  }
+
+  .address {
+    text-align: center;
+  }
+
+  a.footer-logo {
+    left: 3.5rem;
+    margin: 0.5rem 0 0 5rem;
+  }
+}
