@@ -15,7 +15,7 @@ https://gourmet254.netlify.app/
 ### :computer: Setup
 To get a local copy up and running follow these simple example steps.
 
-- open your terminal, and run 'git clone https://github.com/blancc-page/Restaurant-Reservation-System' to clone the repository to your computer  
+- open your terminal, and run 'git clone https://github.com/blancc-page/restaurant-table-reservation-' to clone the repository to your computer  
 - transfer the project into your wamp root directory
 - on your browser go to 'localhost'
 - click on Restaurant-Reservation-System
